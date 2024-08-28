@@ -47,6 +47,7 @@ header > nav > ul > li a:hover {
 }
 
 h1 {
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -54,9 +55,8 @@ h1 {
     color: #faee79;
 }
 
-.fortyeightpx{
+.fortyeightpx {
     font-size: 48px;
-    
 }
 
 .ticker {
@@ -75,7 +75,7 @@ h1 {
 }
 
 .color-black {
-    color: #000; 
+    color: #000;
 }
 
 .small-text {
@@ -103,6 +103,7 @@ h1 {
 }
 
 .hero-layout {
+    /* border: 1px solid #000; */
     padding: 1.3rem 3rem 0 3rem;
     display: flex;
     height: 80vh;
@@ -111,6 +112,7 @@ h1 {
 }
 
 .hero-text {
+    /* border: 1px solid #000; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -138,11 +140,11 @@ h1 {
 }
 
 /* TOKENOMICS SECTION */
-.sections{
-    padding:1rem 4.2rem;
+.tokenomics {
+    padding: 1rem 4.2rem;
 }
 
-.flexbox{
+.flexbox {
     width: 100%;
     padding: 5rem 0 0 0;
     display: flex;
@@ -152,7 +154,7 @@ h1 {
     gap: 1rem;
 }
 
-.flexbox .box{
+.flexbox .box {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -164,36 +166,40 @@ h1 {
     background-color: #ab9b9b;
 }
 
-.name{ 
+.name {
     font-size: 25px;
     font-weight: bold;
 }
 
-.info-supply{
+.info-supply {
     font-size: 5rem;
 }
-.info{
+
+.info {
     font-size: 2.5rem;
 }
 
-.whitepaper-section{
- padding: 3rem 2rem 0 2rem;
- display: flex;
- flex-direction: row;  
- justify-content: space-between;
+.whitepaper {
+    padding: 1rem 4.2rem;
 }
 
-.whitepaper-text{
+.whitepaper-section {
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.whitepaper-text {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     width: 50%;
 }
 
-.whitepaper-text > p{
+.whitepaper-text > p {
     font-size: 19px;
 }
-
 
 /* Responsive Styles */
 
@@ -226,14 +232,18 @@ h1 {
         font-size: 2rem;
     }
 
-    /* .hero-layout {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    } */
+    .hero-layout {
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    .hero-text{
+        width: 100%;
+    }
 
     .hero-image-box {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin-top: 2rem;
     }
@@ -242,17 +252,55 @@ h1 {
         width: 100%;
         height: auto;
     }
+
+    .whitepaper-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .whitepaper-text {
+        width: 100%;
+    }
 }
 
 /* Small Devices (Mobile Phones) */
 @media (max-width: 768px) {
-   
-header > nav > ul{
-    display: none;
+    header > nav > ul {
+        display: none;
+    }
+
+    .hero-image-box {
+        display: none;
+    }
+
+    .cta-text {
+        font-size: 1.8rem;
+    }
+
+    .small-text {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .whitepaper-section {
+        padding: 2rem 0 0 0;
+        flex-direction: column;
+    }
+
+    .whitepaper-text {
+        width: 100%;
+    }
+
+    .flexbox .box{
+        width: 20rem;
+    }
 }
 
-}
-
+/* Extra Small Devices (Small Phones) */
 @media (max-width: 576px) {
     header > nav > ul > li {
         font-size: 16px;
@@ -262,8 +310,8 @@ header > nav > ul{
         font-size: 1.6rem;
     }
 
-    .hero-image-box {
-        margin-top: 1rem;
+    .hero-layout {
+        padding: 0.5rem;
     }
 
     .small-text {
@@ -273,8 +321,13 @@ header > nav > ul{
     .cta-button {
         font-size: 12px;
     }
+
+    .whitepaper-text > p {
+        font-size: 17px;
+    }
 }
 
+/* Very Small Devices */
 @media (max-width: 480px) {
     .cta-text {
         font-size: 1.4rem;
@@ -284,11 +337,17 @@ header > nav > ul{
         padding: 0.5rem;
     }
 
-    .hero-image-box {
-        margin-top: 0.5rem;
+    .cta-button {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    .whitepaper-text > p {
+        font-size: 16px;
     }
 }
 
+/* Ultra Small Devices (i.e., old small phones) */
 @media (max-width: 360px) {
     .cta-text {
         font-size: 1.2rem;
@@ -301,5 +360,9 @@ header > nav > ul{
     .cta-button {
         font-size: 10px;
         padding: 4px 6px;
+    }
+
+    .whitepaper-text > p {
+        font-size: 15px;
     }
 }
