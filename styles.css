@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Play", sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #6e2915;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* General header styling */
+header {
+    display: flex;
+    padding: 1rem 2.5rem;
+    justify-content: space-between;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    font-size: 20px;
+}
+
+header > nav > ul > li a {
+    color: #ffff;
+}
+
+header > nav > ul > li a:hover {
+    color: #faee79;
+}
+
+h1 {
+    color: #fff;
+}
+
+.bright-yellow {
+    color: #faee79;
+}
+
+.fortyeightpx{
+    font-size: 48px;
+    
+}
+
+.ticker {
+    word-spacing: 4px;
+}
+
+.cta-button {
+    border-radius: 25px;
+    padding: 7px 10px;
+    font-size: 16px;
+    font-family: "Play", sans-serif;
+}
+
+.cta {
+    border: none;
+}
+
+.color-black {
+    color: #000; 
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.cta-text {
+    font-size: 3rem;
+}
+
+.bright-yellow-bg {
+    background-color: #faee79;
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1.4rem 2rem 0 2rem;
+    height: 89vh;
+    background-color: #6e2915;
+}
+
+.hero-layout {
+    padding: 1.3rem 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+}
+
+.hero-image-box {
+    width: 32%;
+    display: flex;
+    height: 400px;
+    align-self: end;
+}
+
+.hero-image-box > img {
+    width: 100%;
+    height: auto;
+}
+
+/* blank banner */
+.blank-banner {
+    height: 11vh;
+    width: 100%;
+    background-color: #EB9E43;
+}
+
+/* TOKENOMICS SECTION */
+.sections{
+    padding:1rem 4.2rem;
+}
+
+.flexbox{
+    width: 100%;
+    padding: 5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flexbox .box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 14rem;
+    width: 26rem;
+    background-color: #ab9b9b;
+}
+
+.name{ 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info-supply{
+    font-size: 5rem;
+}
+.info{
+    font-size: 2.5rem;
+}
+
+.whitepaper-section{
+ padding: 3rem 2rem 0 2rem;
+ display: flex;
+ flex-direction: row;  
+ justify-content: space-between;
+}
+
+.whitepaper-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+}
+
+.whitepaper-text > p{
+    font-size: 19px;
+}
+
+
+/* Responsive Styles */
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .hero-section {
+        padding: 1rem 3rem;
+    }
+
+    .cta-text {
+        font-size: 2.5rem;
+    }
+
+    .hero-layout {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 1rem 2rem;
+    }
+
+    header > nav > ul > li {
+        font-size: 18px;
+    }
+
+    .cta-text {
+        font-size: 2rem;
+    }
+
+    /* .hero-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
+    .hero-image-box {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-image-box > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+   
+header > nav > ul{
+    display: none;
+}
+
+}
+
+@media (max-width: 576px) {
+    header > nav > ul > li {
+        font-size: 16px;
+    }
+
+    .cta-text {
+        font-size: 1.6rem;
+    }
+
+    .hero-image-box {
+        margin-top: 1rem;
+    }
+
+    .small-text {
+        font-size: 11px;
+    }
+
+    .cta-button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-text {
+        font-size: 1.4rem;
+    }
+
+    .hero-layout {
+        padding: 0.5rem;
+    }
+
+    .hero-image-box {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cta-text {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        padding: 0.5rem;
+    }
+
+    .cta-button {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+}
