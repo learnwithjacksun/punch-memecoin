@@ -1,0 +1,453 @@
+a{
+    text-decoration: none;
+}
+
+.mark {
+    color: var(--primary);
+}
+
+button {
+    border: 0;
+    font-size: 1em;
+    transition: .2s;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+button:active {
+    scale: .9;
+}
+
+/* General header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    min-height: 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    height: 45px;
+    width: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.menu-btn span {
+    color: #222;
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    /* color:; */
+}
+
+header nav ul li a:hover {
+    color: #faee79;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.bright-yellow {
+    color: #faee79;
+}
+
+.fortyeightpx {
+    font-size: 48px;
+}
+
+.ticker {
+    word-spacing: 4px;
+}
+
+.header-cta {
+    border-radius: 2em;
+    padding: 1em 2em;
+    font-size: 16px;
+    background-color: var(--primary);
+    color: var(--bg);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.cta-button {
+    border-radius: 2em;
+    padding: 1em 2em;
+    font-size: 16px;
+}
+
+.cta {
+    border: none;
+}
+
+.color-black {
+    color: #000;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.cta-text {
+    font-size: 3rem;
+}
+
+.bright-yellow-bg {
+    background-color: #faee79;
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* padding: 1.4rem 2rem 0 2rem; */
+    /* height: 89vh; */
+    background-color: #6e2915;
+}
+
+.hero-layout {
+    /* border: 1px solid #000; */
+    /* padding: 1.3rem 3rem 0 3rem; */
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-text {
+    /* border: 1px solid #000; */
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+}
+
+.hero-image-box {
+    width: 32%;
+    display: flex;
+    height: 400px;
+    align-self: end;
+}
+
+.hero-image-box>img {
+    width: 100%;
+    height: auto;
+}
+
+/* blank banner */
+.blank-banner {
+    height: 11vh;
+    width: 100%;
+    background-color: #EB9E43;
+}
+
+/* TOKENOMICS SECTION */
+.tokenomics {
+    padding: 1rem 4.2rem;
+}
+
+.flexbox {
+    width: 100%;
+    padding: 5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flexbox .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 14rem;
+    width: 26rem;
+    background-color: #ab9b9b;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info-supply {
+    font-size: 5rem;
+}
+
+.info {
+    font-size: 2.5rem;
+}
+
+.whitepaper {
+    padding: 1rem 4.2rem;
+}
+
+.whitepaper-section {
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.whitepaper-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+}
+
+.whitepaper-text>p {
+    font-size: 19px;
+}
+
+/* Responsive Styles */
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .hero-section {
+        /* padding: 1rem 3rem; */
+    }
+
+    .cta-text {
+        font-size: 2.5rem;
+    }
+
+    .hero-layout {
+        /* padding: 1rem 2rem; */
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .hero-section {
+        /* padding: 1rem 2rem; */
+    }
+
+    header>nav>ul>li {
+        /* font-size: 18px; */
+    }
+
+    .cta-text {
+        font-size: 2rem;
+    }
+
+    .hero-layout {
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image-box {
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-image-box>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .whitepaper-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .whitepaper-text {
+        width: 100%;
+    }
+}
+
+/* Small Devices (Mobile Phones) */
+/* done: header */
+@media (max-width: 768px) {
+
+    header nav ul,
+    .header-cta {
+        /* display: none; */
+    }
+
+    header nav {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: -70%;
+        width: 70%;
+        min-height: 100dvh;
+        background-color: var(--primary);
+        padding: 2em 1em;
+        align-items: unset;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items:unset;
+        gap: .5em;
+    }
+    header nav ul li a{
+        display: block;
+        color:var(--bg);
+        padding: .75em;
+    }
+
+    header nav ul li a:hover{
+        background-color:var(--bg);
+    }
+    .header-cta{
+        background-color: var(--bg);
+        border-radius: 0;
+        color: var(--main);
+        margin-block-start: 1em;
+        margin-top: auto;
+    }
+
+    header {
+        /* padding: 1rem 1rem; */
+    }
+
+    .hero-image-box {
+        display: none;
+    }
+
+    .cta-text {
+        font-size: 1.8rem;
+    }
+
+    .small-text {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .whitepaper-section {
+        padding: 2rem 0 0 0;
+        flex-direction: column;
+    }
+
+    .whitepaper-text {
+        width: 100%;
+    }
+
+    .flexbox .box {
+        width: 20rem;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+}
+
+/* Extra Small Devices (Small Phones) */
+@media (max-width: 576px) {
+    header>nav>ul>li {
+        /* font-size: 16px; */
+    }
+
+    .cta-text {
+        font-size: 1.6rem;
+    }
+
+    .hero-layout {
+        /* padding: 0.5rem; */
+    }
+
+    .small-text {
+        font-size: 11px;
+    }
+
+    .cta-button {
+        font-size: 12px;
+    }
+
+    .whitepaper-text>p {
+        font-size: 17px;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+    .cta-text {
+        font-size: 1.4rem;
+    }
+
+    .hero-layout {
+        /* padding: 0.5rem; */
+    }
+
+    .cta-button {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    .whitepaper-text>p {
+        font-size: 16px;
+    }
+}
+
+/* Ultra Small Devices (i.e., old small phones) */
+@media (max-width: 360px) {
+    .cta-text {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        /* padding: 0.5rem; */
+    }
+
+    .cta-button {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .whitepaper-text>p {
+        font-size: 15px;
+    }
+}
+
+/* Jackson */
+section {
+    width: min(1280px, 90%);
+    margin: auto;
+}
